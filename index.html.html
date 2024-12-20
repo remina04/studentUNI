@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Gyurka Remina-Nicola">
+    <meta name="keywords" content="Organizație studențească, studenți, asociație">
+    <meta name="description"
+        content="StudentUni este o organizație studențească dedicată sprijinirii și promovării proiectelor inovatoare și captivante create de studenți. Cu o comunitate vibrantă și dinamică, StudentUni oferă o platformă unde studenții pot colabora, învăța și dezvolta idei cool, contribuind la dezvoltarea personală și profesională. Alătură-te nouă și descoperă oportunități de a participa la proiecte interesante, evenimente și activități care fac diferența în viața studenților.">
+    <title>StudentUNI</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: rgb(21, 21, 21);
+        }
+
+        .nav-item a {
+            color: rgb(0, 89, 255);
+            font-style: bold;
+            margin: 0 20px 0 20px;
+        }
+
+        .nav-item a:hover {
+            color: white;
+        }
+
+        .container-fluid {
+            background-color: black;
+            height: 100px;
+        }
+
+        h1 {
+            display: inline;
+            font-size: large;
+            color: white;
+            text-align: center;
+        }
+
+        .navbar-expand-lg {
+            padding: 0;
+        }
+
+        h2 {
+            margin: 25px;
+            color: aliceblue;
+        }
+
+        .card {
+            margin-bottom: 40px;
+        }
+
+        .card img {
+            filter: blur(1.5px);
+        }
+
+        .card-title h3 {
+            color: rgb(21, 21, 21);
+            font-size: medium;
+            text-align: center;
+        }
+
+        .card-img-overlay h3 {
+            font-weight: 700;
+            color: rgb(0, 89, 255);
+            font-size: medium;
+            text-align: center;
+
+        }
+
+        .p-introductiv {
+            color: rgb(175, 180, 185);
+            margin-bottom: 20px;
+        }
+
+        .border h3 {
+            font-size: large;
+            font-weight: 500;
+            text-align: center;
+            margin: 15px;
+            padding: 5px;
+        }
+
+        .p-blog {
+            font-size: small;
+            color: rgb(175, 180, 185);
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .h2-inscrieri {
+            margin: 50px 25px 50px 25px;
+            color: aliceblue;
+        }
+
+        .bg-transparent {
+            background-color: transparent;
+            color: rgb(175, 180, 185);
+        }
+
+        .form-control {
+            border: solid rgb(0, 89, 255);
+            box-shadow: 0 0 10px 1px rgb(0, 89, 255);
+        }
+
+        .btn {
+            margin: 20px 0 20px 0;
+        }
+
+        .btn-i {
+            border: solid rgb(0, 89, 255);
+            box-shadow: 0 0 10px 1px rgb(0, 89, 255);
+            background-color: black;
+        }
+
+        .accordion-button {
+            background-color: black;
+            color: rgb(0, 89, 255);
+        }
+
+        .accordion-item {
+            margin-bottom: 0;
+            padding: 0;
+            border: none;
+        }
+
+        .accordion-header {
+            margin: 0;
+            padding: 0;
+        }
+
+        .accordion-button {
+            background-color: black;
+            color: rgb(0, 89, 255);
+            padding: 15px;
+            border: none;
+            font-weight: 500;
+        }
+
+        .accordion-body {
+            background-color: black;
+            padding: 15px;
+            font-size: medium;
+            color: rgb(175, 180, 185);
+        }
+
+        .border-a {
+            border: solid rgb(0, 89, 255)
+        }
+
+        .display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .h2-contact {
+            color: rgb(0, 89, 255);
+        }
+
+        .p-contact {
+            color: rgb(175, 180, 185);
+            font-size: medium;
+            text-align: center;
+        }
+
+        .p-separat {
+            color: rgb(175, 180, 185);
+            font-size: large;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        .contact-a {
+            color: rgb(0, 89, 255);
+            font-size: x-small;
+            text-decoration: none;
+        }
+
+        .contact-a:hover {
+            color: rgb(175, 180, 185);
+        }
+
+        .container-fluid-2 {
+            height: 200px;
+            background-color: black;
+            margin-top: 20px;
+        }
+
+        iframe {
+            margin-top: 20px;
+        }
+
+        .row-1 {
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .poze {
+            height: 30px;
+            margin: 30px 10px 30px 10px;
+        }
+
+        .m-f {
+            margin: 30px 10px 30px 10px;
+        }
+        ul {
+            list-style-type: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="poze/logo.png" alt="Logo" height="40">
+                    <h1>StudentUNI</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#Proiecte">Proiecte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="poze/carusel1.jpg" class="d-block w-100" alt="o echipă care lucrează">
+                </div>
+                <div class="carousel-item">
+                    <img src="poze/carusel2.jpg" class="d-block w-100" alt="tineri care discută">
+                </div>
+                <div class="carousel-item">
+                    <img src="poze/carusel3.jpg" class="d-block w-100" alt="bărbați în costum">
+                </div>
+                <div class="carousel-item">
+                    <img src="poze/carusel4.jpg" class="d-block w-100" alt="oameni care țin degetele în formă de stea">
+                </div>
+                <div class="carousel-item">
+                    <img src="poze/carusel5.jpg" class="d-block w-100" alt="o femeie care zâmbește ">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Cine suntem noi?</h2>
+        <div class="col-12">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item border-a">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Povestea noastră
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <p>
+                                “StudentUNI: Locul unde pasiunea întâlnește inovația”
+                                StudentUNI a luat naștere din dorința de a construi o comunitate în care studenții
+                                pasionați de tehnologie să poată învăța, experimenta și crea împreună. De la primele
+                                întâlniri până la proiectele premiate internațional, povestea noastră este despre
+                                colaborare, perseverență și dorința de a schimba lumea digitală.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-a">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Misiunea noastră
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>
+                                “Educație, inovație și progres digital”
+                                Ne propunem să oferim tinerilor oportunitatea de a-și dezvolta competențele în
+                                tehnologie prin proiecte, hackathoane și mentorat. Credem în puterea educației practice
+                                și în sprijinirea inițiativelor inovatoare care au un impact real asupra societății.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-a">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Ce ne face diferiți?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>
+                                “O comunitate dedicată excelenței”
+                                Ceea ce ne diferențiază este atmosfera de sprijin și dorința continuă de a învăța.
+                                Proiectele noastre sunt axate pe rezolvarea unor probleme reale, iar echipa noastră
+                                colaborează îndeaproape cu experți din industrie, pentru a transforma ideile în soluții
+                                concrete.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 id="Proiecte">Proiecte</h2>
+        <p class="p-introductiv">Student UNI te invită să te implici în proiectele noastre inovative, de la dezvoltarea
+            unei platforme digitale
+            pentru managementul cursurilor, până la participarea la hackathonuri și programe de mentorat IT. Implică-te
+            și
+            descoperă oportunități valoroase pentru dezvoltarea ta profesională și personală!</p>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card text-bg-dark">
+                    <img src="poze/card1.jpg" class="card-img" alt="o echipă veselă">
+                    <div class="card-img-overlay">
+                        <h3 class="card-title">Program de Mentorat IT cu StudentUNI </h3>
+                        <p class="badge text-bg-secondary d-flex justify-content-center">locuri disponibile: 25</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card text-bg-dark">
+                    <img src="poze/card2.jpg" class="card-img" alt="un calendar cu overline">
+                    <div class="card-img-overlay">
+                        <h3 class="card-title">Hackathon Tech Innovators(HTIHub)</h3>
+                        <p class="badge text-bg-secondary d-flex justify-content-center">locuri disponibile: 10</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card text-bg-dark">
+                    <img src="poze/card3.jpg" class="card-img" alt="două piese de puzzle identice">
+                    <div class="card-img-overlay">
+                        <h3 class="card-title">Conferința Tehnologiilor Viitorului</h3>
+                        <p class="badge text-bg-secondary d-flex justify-content-center">locuri disponibile: 50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card text-bg-dark">
+                    <img src="poze/card4.jpg" class="card-img" alt="două mâini care lucrează la o schiță ">
+                    <div class="card-img-overlay">
+                        <h3 class="card-title">Laboratorul de Inovație Digitală</h3>
+                        <p class="badge text-bg-secondary d-flex justify-content-center">locuri disponibile: 10</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card text-bg-dark">
+                    <img src="poze/card5.jpg" class="card-img" alt="un bec cu cercuri goale în jurul lui">
+                    <div class="card-img-overlay">
+                        <h3 class="card-title">Platforma Digitală pentru Managementul Cursurilor</h3>
+                        <p class="badge text-bg-secondary d-flex justify-content-center">locuri disponibile: 9</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-grid col-6 mx-auto">
+            <button class="btn btn-i " type="button"> <a href="#ÎnscrieriF"
+                    class="text-light text-decoration-none fw-semibold">Înscrie-te</a></button>
+        </div>
+
+        <div class="container">
+            <h2 id="Blog">Blog</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 border border-primary">
+                    <h3 class="text-primary">Studenții români cuceresc Estonia cu roboții lor!</h3>
+                    <p class="p-blog">Echipa Studentuni a impresionat recent la "Estonian Tech Challenge", un concurs
+                        internațional de
+
+                        robotică. Proiectul lor, un robot autonom pentru medii dificile, destinat echipelor de salvare,
+                        a
+                        fost premiat cu Cea mai Bună Inovație Tehnologică. Robotul poate detecta mișcarea și transmite
+                        informații în timp real, fiind apreciat pentru aplicațiile practice în salvări și explorări
+                        industriale.
+                        “Acest proiect a fost o adevărată provocare, dar și o oportunitate de a pune în practică toate
+                        cunoștințele acumulate. Este doar începutul. Vom continua să inovăm,” a declarat echipa
+                        entuziasmată.
+
+                        Robotul a atras atenția unui juriu format din experți internaționali, fiind lăudat nu doar
+                        pentru
+                        funcționalitățile sale, ci și pentru eficiența sa energetică și utilizarea materialelor
+                        sustenabile.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 border border-primary">
+                    <h3 class="text-primary">Platformele inovatoare Studentuni impresionează în Estonia</h3>
+                    <p class="p-blog"> “Este doar începutul. Vom continua să inovăm,” a declarat echipa entuziasmată.
+                        La "Digital Future Hackathon", echipa Studentuni a prezentat proiecte revoluționare: EduFlex, o
+                        platformă educațională personalizată, și GreenHive, un hub pentru sustenabilitate.
+
+                        EduFlex folosește inteligență artificială pentru a adapta procesul de învățare în funcție de
+                        nevoile
+                        fiecărui utilizator. GreenHive conectează utilizatorii cu inițiative ecologice, promovând
+                        implicarea
+                        activă în protejarea mediului.
+                        Aceste soluții au atras atenția investitorilor, confirmând că studenții Studentuni pot avea un
+                        impact real asupra viitorului digital.
+
+                        “Estonia a fost o oportunitate să ne arătăm potențialul,” a spus Mihai, membru al echipei.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 border border-primary">
+                    <h3 class="text-primary">Proiectele recente lansate de StudentUNI</h3>
+                    <p class="p-blog">Organizația StudentUNI continuă să inspire comunitatea academică prin inițiative
+                        care
+                        promovează
+                        digitalizarea și inovarea. Printre cele mai recente realizări se numără un Program de Mentorat
+                        IT,
+                        unde studenții primesc sprijin din partea experților pentru a-și dezvolta abilități practice,
+                        dar și
+                        evenimente precum Hackathon Tech Innovators (HTIHub) și Conferința Tehnologiilor Viitorului,
+                        unde
+                        tinerii au ocazia să prezinte soluții digitale revoluționare. De asemenea, Laboratorul de
+                        Inovație
+                        Digitală și o nouă Platformă Digitală pentru Managementul Cursurilor au fost dezvoltate pentru a
+                        optimiza procesele educaționale. Aceste proiecte reflectă viziunea StudentUNI de a susține
+                        progresul
+                        tehnologic și dezvoltarea competențelor digitale.</p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 border border-primary">
+                    <h3 class="text-primary">StudentUNI la pasiune la inovație</h3>
+                    <p class="p-blog">De-a lungul timpului, StudentUNI s-a transformat dintr-un simplu grup studențesc
+                        într-o adevărată
+                        comunitate de inovatori dedicați. Fiecare proiect demarat reprezintă o combinație de pasiune,
+                        muncă
+                        și determinare, transformând ideile creative în soluții practice. Fie că vorbim despre roboți
+                        autonomi, platforme digitale sau evenimente educaționale, scopul este același: să aducem
+                        tehnologia
+                        mai aproape de studenți și să inspirăm generațiile viitoare.
+
+                        Succesul din Estonia, premiile câștigate și proiectele recente sunt doar o parte din povestea
+                        StudentUNI. Cu fiecare realizare, organizația demonstrează că atunci când pasiunea întâlnește
+                        inovația, viitorul devine cu adevărat digital.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <h2 class="h2-inscrieri" id="ÎnscrieriF">Înscrieri proiecte</h2>
+            <p class="p-introductiv">Perioada de înscriere la Student UNI începe acum! Nu rata ocazia de a face parte
+                dintr-o
+                comunitate de studenți pasionați de IT și de inovare digitală. Completează formularul de
+                înscriere pe site-ul nostru și alătură-te echipei noastre pentru a contribui la proiectele
+                noastre de impact.</p>
+            <form class="row g-2">
+                <div class="col-4">
+                    <label for="validationDefault01" class="form-label text-primary">Nume</label>
+                    <input type="text" class="form-control bg-transparent" id="validationDefault01" value="" required>
+                </div>
+                <div class="col-4 ">
+                    <label for="validationDefault02" class="form-label text-primary">Prenume</label>
+                    <input type="text" class="form-control bg-transparent" id="validationDefault02" value="" required>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <label for="validationDefaultUsername" class="form-label text-primary">Email</label>
+                    <div class="input-group">
+                        <span class="input-group-text text-primary  bg-transparent" id="inputGroupPrepend2">@</span>
+                        <input type="text" class="form-control bg-transparent" id="validationDefaultUsername"
+                            aria-describedby="inputGroupPrepend2" required>
+                    </div>
+                </div>
+                <div class="col-4 ">
+                    <label for="validationDefault03" class="form-label text-primary">Oraș</label>
+                    <input type="text" class="form-control bg-transparent" id="validationDefault03" required>
+                </div>
+
+                <div class="col-4 ">
+                    <label for="validationDefault04" class="form-label text-primary">Proiect</label>
+                    <select class="form-select bg-transparent form-control" id="validationDefault04" required>
+                        <option selected disabled value="">Alege...</option>
+                        <option>Program de Mentorat IT cu StudentUNI</option>
+                        <option>Hackathon Tech Innovators(HTIHub)</option>
+                        <option>Conferința Tehnologiilor Viitorului</option>
+                        <option>Laboratorul de Inovație Digitală</option>
+                        <option>Platforma Digitală pentru Managementul Cursurilor</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label text-primary">Ce te atrage la
+                            proiectul pe care l-ai
+                            ales?</label>
+                        <textarea class="form-control bg-transparent" id="exampleFormControlTextarea1"
+                            rows="3"></textarea>
+                    </div>
+
+                    <p class="text-danger fw-bold">Înscrierile se închid luni 20.01.2025 ora 16:00</p>
+                </div>
+
+                <div class="col-12 ">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label text-primary" for="invalidCheck2">
+                            Accept termenii și condițiile
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Trimite formular</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="display flex-column ">
+                        <h2 class="h2-contact">Orar</h2>
+                        <p class="p-separat">Luni-Vineri: 10:00-18:00</p>
+                        <p class="p-contact">Suntem aici pentru a te ajuta! Dacă ai întrebări, sugestii sau dorești să
+                            afli
+                            mai multe despre StudentUNI
+                            nu ezita să ne contactezi prin intermediul următoarelor metode:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <iframe class="border border-5 border-primary"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10930.75146417856!2d23.59742146712655!3d46.771048651066124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1732539137992!5m2!1sro!2sro"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="container-fluid container-fluid-2">
+        <footer>
+            <div class="row row-1 ">
+                <div class="col-lg-3 col-md-6 col-sm-12 m-f d-flex justify-content-center align-items-center">
+                    <img src="poze/logo.png" alt="Logo" height="70">
+                    <div id="Contact" class="flex-column">
+                    <p class="p-blog">Email <a class="contact-a" href="mailto:studentuni@gmail.com">studentuni@gmail.com</a></p>
+                    <p class="p-blog">Telefon <a class="contact-a" href="tel:+0740000000">0700 000 000</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <ul class="d-flex align-items-center justify-content-center"">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                    <img class="poze" src="poze/fb.png" alt="logo facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/?hl=ro" target="_blank">
+                    <img class="poze" src="poze/insta.png" alt="logo instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/?lang=ro" target="_blank">
+                    <img class="poze" src="poze/x.png" alt="x logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                    <img class="poze" src="poze/yt.png" alt="youtube logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 m-f">
+                    <p class="p-blog text-center">&copy; Copyright 2024 Gyurka Remina-Nicola Toate drepturile rezervate
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
